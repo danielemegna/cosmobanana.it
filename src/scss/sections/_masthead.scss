@@ -11,14 +11,20 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
     background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../assets/img/bg-masthead.jpg');
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    color: whitesmoke;
 
     h1 {
         font-size: 4rem;
         margin: 0;
         padding: 0;
+        text-shadow: 4px 4px 8px #000000;
+    }
+
+    h3 {
+        text-shadow: 4px 4px 8px #000000;
     }
 
     @media (min-width: 992px) {
