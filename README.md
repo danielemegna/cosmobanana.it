@@ -12,6 +12,13 @@ $ docker run --rm -it -p 3000:3000 -v $PWD:/app -w /app node:lts bash
 # yarn start
 ```
 
+### Docker prod way
+
+```
+$ docker build -t cosmobanana .
+$ docker run --rm -it -p 3000:80 cosmobanana
+```
+
 ### npm Scripts
 
 * `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
