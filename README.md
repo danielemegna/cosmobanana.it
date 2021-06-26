@@ -1,6 +1,6 @@
-# [# Cosmobanana](cosmobanana.it)
+# # Cosmobanana
 
-[![Preview](./src/assets/img/bg-masthead.jpg)](https://startbootstrap.github.io/startbootstrap-stylish-portfolio/)
+[![Preview](./src/assets/img/bg-masthead.jpg)](cosmobanana.it)
 
 ## # Dev notes
 
