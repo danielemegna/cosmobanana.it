@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   deploy:
     # The type of runner that the job will run on
-    runs-on: alpine
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -32,7 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Deploy via ssh
         run: |
-          apk add --update openssh-client
+          apt update
+          apt install openssh-client
           >-
             ssh root@cosmobanana.it "
             cd cosmobanana.it ;
