@@ -31,13 +31,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploy via ssh
-        run: |
-          sudo apt-get update
-          sudo apt-get install openssh-client
-          >-
-            ssh root@cosmobanana.it "
-            cd cosmobanana.it ;
-            git pull ;
-            docker build -t cosmobanana . ;
-            docker stop cosmobanana ;
-            docker run --rm -dp 8026:80 --name cosmobanana cosmobanana"
+        run: >-
+          ssh root@cosmobanana.it "
+          cd cosmobanana.it ;
+          git pull ;
+          docker build -t cosmobanana . ;
+          docker stop cosmobanana ;
+          docker run --rm -dp 8026:80 --name cosmobanana cosmobanana"
