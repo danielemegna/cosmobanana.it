@@ -30,6 +30,11 @@ jobs:
       #  run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: 'comsobanana.it'
       - name: Deploy via ssh
         run: >-
           ssh root@cosmobanana.it "
