@@ -7,7 +7,7 @@
 Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
 
 ```
-$ docker run --rm -it -p 3000:3000 -v $PWD:/app -w /app node:lts bash
+$ docker run --rm -it -p 3000:3000 -v $PWD:/app -w /app node:14.17.5 bash
 # yarn install
 # yarn start
 ```
