@@ -1,4 +1,4 @@
-FROM node:lts as builder
+FROM node:14.17.5 as builder
 
 COPY . /app
 WORKDIR /app
