@@ -3,10 +3,11 @@
 // 
 
 .service-icon {
-    background-color: $white;
+    background-size:contain;
     color: $primary;
-    height: 7rem;
-    width: 7rem;
+    border-radius: 30%;
+    height: 15rem;
+    width: 15rem;
     display: block;
     line-height: 7.5rem;
     font-size: 2.25rem;
